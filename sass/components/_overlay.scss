@@ -1,0 +1,28 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-primary-dark {
+  background: $primary-color-dark-overlay;
+}
+
+.overlay-black {
+  background: $black-overlay;
+}
+
+.overlay-black-wood-bg {
+  background: $black-overlay-wood;
+}
+
+.overlay-white {
+  background: $white-overlay;
+  z-index: 1;
+}
+
+.overlay-white-wood-bg {
+  background: $white-overlay-wood-bg;
+}

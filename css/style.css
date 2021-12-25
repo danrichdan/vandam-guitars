@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 112.5em) {
+    html {
+      font-size: 68.75%; } }
+
+body {
+  font-family: "Montserrat", "Franklin Gothic Medium", Arial, sans-serif;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.secondary-heading {
+  font-size: 3rem;
+  color: #583c05;
+  text-transform: uppercase; }
+
+.text-light {
+  color: #dfd0b0; }
+
+.container {
+  max-width: 1300px;
+  width: 75%;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+.section {
+  padding: 5rem 0; }
+
+.mb-5 {
+  margin-bottom: 5rem; }
+
+.mb-1-5 {
+  margin-bottom: 1.5rem; }
+
+.btn {
+  font-size: 1.6rem;
+  color: black;
+  background: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.5s ease-in, background 0.5s ease-in, border 0.5s ease-in; }
+
+.btn-tertiary {
+  background: #ffc25a;
+  color: #583c05;
+  border: 1px solid #ffc25a; }
+
+.btn-tertiary-transparent {
+  background: transparent;
+  color: #ffc25a;
+  border: 1px solid #ffc25a; }
+
+.btn-tertiary:hover {
+  background: transparent;
+  color: #ffc25a; }
+
+.btn-tertiary-transparent:hover {
+  background: #ffc25a;
+  color: #583c05; }
+
+.btn-tertiary-dark-text:hover {
+  background: transparent;
+  color: #583c05;
+  border: 2px solid #583c05; }
+
+.btn-group {
+  display: flex; }
+  .btn-group .btn:first-child {
+    border-radius: 5px 0 0 5px; }
+  .btn-group .btn:last-child {
+    border-radius: 0 5px 5px 0; }
+
+nav a:link,
+nav a:visited {
+  color: #dfd0b0; }
+
+nav a:hover {
+  color: #f8eeda; }
+
+.brand h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.8rem; }
+
+.brand h1 span:first-child {
+  font-family: "Segoe Script", cursive;
+  word-spacing: -1rem; }
+
+.brand h1 span:last-child {
+  margin-top: -1.2rem;
+  text-transform: uppercase; }
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  text-transform: uppercase; }
+  .main-nav a {
+    font-weight: bold;
+    font-size: 1.2rem; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.overlay-primary-dark {
+  background: rgba(52, 33, 27, 0.8); }
+
+.overlay-black {
+  background: rgba(25, 12, 8, 0.88); }
+
+.overlay-black-wood-bg {
+  background: rgba(0, 0, 0, 0.7); }
+
+.overlay-white {
+  background: rgba(250, 250, 250, 0.86);
+  z-index: 1; }
+
+.overlay-white-wood-bg {
+  background: rgba(250, 250, 250, 0.7); }
+
+#main-footer {
+  position: relative;
+  background: url("../img/backgrounds/purty_wood.png");
+  border-top: 1px solid #dfd0b0; }
+  #main-footer .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; }
+  #main-footer .back-to-top {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #dfd0b0;
+    padding: 1.5rem 2.5rem; }
+
+#main-header {
+  position: relative;
+  padding: 1.5rem 0;
+  background: url("../img/backgrounds/purty_wood.png");
+  color: #dfd0b0; }
+  #main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative; }
+
+#hero {
+  position: relative;
+  height: calc(100vh - 75.8px);
+  background: url("../img/lespaul-neck-view.jpg") no-repeat center center/cover; }
+  #hero .container {
+    position: relative;
+    z-index: 1;
+    color: #dfd0b0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  #hero .hero-heading {
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    word-spacing: -0.5rem; }
+    #hero .hero-heading span {
+      word-spacing: -1rem; }
+  #hero .lead {
+    font-weight: bold;
+    font-size: 2.2rem;
+    word-spacing: 0.15rem;
+    letter-spacing: 0.08rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem; }
+
+#shop-section {
+  background-image: url("../img/backgrounds/purty_wood.png");
+  position: relative;
+  height: 70vh;
+  overflow: hidden; }
+  #shop-section figure {
+    position: relative;
+    height: 70vh; }
+    #shop-section figure figcaption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2; }
+    #shop-section figure h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  #shop-section .available-container {
+    margin: 0 auto;
+    max-width: 1800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+
+#gallery .gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 40vh;
+  overflow: hidden; }
+
+#past-guitars {
+  position: relative;
+  height: 70vh;
+  background: url("../img/player.jpg") no-repeat center center/cover; }
+  #past-guitars .past-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+#about {
+  position: relative;
+  background: url("../img/backgrounds/purty_wood.png"); }
+  #about .container {
+    position: relative;
+    z-index: 1; }
+  #about p {
+    width: 80%;
+    margin: 0 auto 2rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem; }
+
+#contact {
+  position: relative;
+  background: url("../img/backgrounds/purty_wood.png"); }
+  #contact .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center; }
