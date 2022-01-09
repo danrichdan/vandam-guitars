@@ -2,8 +2,15 @@
   position: relative;
   padding: 1.5rem 0;
   background: url($wood-background);
-
+  z-index: 2;
   color: $secondary-color;
+
+  @include respond(ipad) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
   .container {
     display: flex;

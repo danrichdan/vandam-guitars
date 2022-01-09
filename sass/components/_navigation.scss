@@ -16,3 +16,31 @@
 .main-nav {
   font-size: 1.2rem;
 }
+
+.mobile-nav {
+  position: relative;
+  top: 1.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0 0;
+
+  li,
+  a {
+    color: $secondary-color;
+  }
+
+  li {
+    border-top: 1px solid $secondary-color;
+    padding: 1rem 0;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}

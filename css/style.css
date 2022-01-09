@@ -21,6 +21,9 @@ html {
 body {
   font-family: "Montserrat", "Franklin Gothic Medium", Arial, sans-serif;
   box-sizing: border-box; }
+  @media only screen and (max-width: 48em) {
+    body {
+      padding-top: 68px; } }
 
 a {
   text-decoration: none; }
@@ -82,6 +85,9 @@ img {
 
 .mb-1-5 {
   margin-bottom: 1.5rem; }
+
+.hide {
+  display: none; }
 
 .btn {
   font-size: 1.6rem;
@@ -200,6 +206,32 @@ img {
     padding: 0.5rem;
     width: 100%; }
 
+.hamburger {
+  cursor: pointer;
+  display: none;
+  /* Rotate first bar */
+  /* Fade out the second bar */
+  /* Rotate last bar */ }
+  @media only screen and (max-width: 48em) {
+    .hamburger {
+      display: inline-block;
+      position: relative;
+      z-index: 100; } }
+  .hamburger .bar1,
+  .hamburger .bar2,
+  .hamburger .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #dfd0b0;
+    margin: 5px 0;
+    transition: 0.4s; }
+  .hamburger .change.bar1 {
+    transform: rotate(-45deg) translate(-6px, 5px); }
+  .hamburger .change.bar2 {
+    opacity: 0; }
+  .hamburger .change.bar3 {
+    transform: rotate(45deg) translate(-6px, -6px); }
+
 nav a:link,
 nav a:visited {
   color: #dfd0b0; }
@@ -261,6 +293,27 @@ nav a:hover {
 .main-nav {
   font-size: 1.2rem; }
 
+.mobile-nav {
+  position: relative;
+  top: 1.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0 0; }
+  .mobile-nav li,
+  .mobile-nav a {
+    color: #dfd0b0; }
+  .mobile-nav li {
+    border-top: 1px solid #dfd0b0;
+    padding: 1rem 0; }
+  .mobile-nav a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem; }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -315,13 +368,41 @@ nav a:hover {
   position: relative;
   padding: 1.5rem 0;
   background: url("../img/backgrounds/purty_wood.png");
+  z-index: 2;
   color: #dfd0b0; }
+  @media only screen and (max-width: 48em) {
+    #main-header {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0; } }
   #main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
     position: relative; }
+
+#thanks {
+  background: url("../img/backgrounds/purty_wood.png");
+  position: relative;
+  height: calc(100vh - 120px); }
+  #thanks .container {
+    position: relative;
+    z-index: 1;
+    color: #583c05;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #thanks .thanks-content {
+    position: relative;
+    bottom: 15%; }
+  #thanks h2 {
+    font-size: 4.5rem; }
+  #thanks p {
+    font-size: 1.75rem; }
 
 #hero {
   position: relative;

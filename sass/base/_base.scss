@@ -28,6 +28,10 @@ html {
 body {
   font-family: $main-font;
   box-sizing: border-box;
+
+  @include respond(ipad) {
+    padding-top: 68px;
+  }
 }
 
 a {
