@@ -1,7 +1,6 @@
 #main-footer {
   position: relative;
   background: url($wood-background);
-  // background: #443b2c;
   border-top: 1px solid $secondary-color;
 
   .container {
@@ -9,6 +8,7 @@
     z-index: 1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .back-to-top {
@@ -19,5 +19,18 @@
     align-items: center;
     background: $secondary-color;
     padding: 1.5rem 2.5rem;
+  }
+
+  .footer-brand {
+    display: flex;
+
+    align-items: center;
+    gap: 0.5rem;
+
+    .copyright {
+      font-size: 0.75rem;
+      color: $secondary-color;
+      align-self: flex-end;
+    }
   }
 }

@@ -1,0 +1,45 @@
+.container {
+  max-width: 1300px;
+  width: 75%;
+  margin: 0 auto;
+
+  @include respond(phone) {
+    width: 85%;
+  }
+
+  @include respond(small-phone) {
+    width: 90%;
+  }
+
+  @include respond(very-small-phone) {
+    width: 95%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+
+  @include respond(small-laptop) {
+    margin-bottom: 4rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+
+  @include respond(small-med-phone) {
+    margin-bottom: 2rem;
+  }
+}
+
+.mb-1-5 {
+  margin-bottom: 1.5rem;
+}

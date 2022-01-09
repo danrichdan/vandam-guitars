@@ -9,6 +9,34 @@
   border: none;
   cursor: pointer;
   transition: color 0.5s ease-in, background 0.5s ease-in, border 0.5s ease-in;
+
+  @include respond(small-laptop) {
+    font-size: 1.4rem;
+  }
+
+  @include respond(small-med-phone) {
+    font-size: 1.25rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 1rem;
+  }
+
+  @include respond(very-small-phone) {
+    font-size: 0.85rem;
+  }
+}
+
+.btn-secondary {
+  background: $secondary-color;
+  color: $primary-color;
+  border: 1px solid $secondary-color;
+}
+
+.btn-secondary:hover {
+  background: transparent;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
 }
 
 .btn-tertiary {
@@ -50,7 +78,3 @@
     border-radius: 0 5px 5px 0;
   }
 }
-
-// .back-to-top svg path {
-//   fill: $secondary-color;
-// }
