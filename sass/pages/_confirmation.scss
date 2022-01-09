@@ -1,0 +1,29 @@
+#thanks {
+  background: url($wood-background);
+  position: relative;
+  height: calc(100vh - 120px);
+
+  .container {
+    position: relative;
+    z-index: 1;
+    color: $primary-color;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thanks-content {
+    position: relative;
+    bottom: 15%;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  p {
+    font-size: 1.75rem;
+  }
+}

@@ -15,6 +15,11 @@
         <div class="brand">
           <h1><span>Van Dam</span> <span>Guitars</span></h1>
         </div>
+        <div class="hamburger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <ul class="main-nav">
           <li><a href="#shop-section">Guitars</a></li>
           <li><a href="#shop-section">Materials</a></li>
@@ -22,16 +27,14 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- <nav class="mobile-nav hide">
-        <div class="mobile-nav-content">
-          <h2>Van Dam Art</h2>
-          <ul>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav> -->
+      <nav class="mobile-nav hide">
+        <ul>
+          <li><a href="#shop-section">Guitars</a></li>
+          <li><a href="#shop-section">Materials</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Main Content -->
@@ -117,6 +120,12 @@
             nostrum debitis quas recusandae quaerat nemo tempore ab officia!
             Veritatis, sit.
           </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est sint
+            consequuntur pariatur et dolores dolor explicabo similique repellat,
+            nostrum debitis quas recusandae quaerat nemo tempore ab officia!
+            Veritatis, sit.
+          </p>
         </div>
       </section>
       <!-- Contact -->
@@ -172,7 +181,7 @@
       <nav class="container">
         <div class="brand footer-brand">
           <h5 class="text-light"><span>Van Dam</span> <span>Guitars</span></h5>
-          <span class="copyright">&copy;2022</span>
+          <span class="copyright">&copy;<span id="year">2022</span></span>
         </div>
         <ul class="footer-nav">
           <li><a href="#shop-section">Guitars</a></li>
@@ -202,5 +211,6 @@
         </div>
       </nav>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
