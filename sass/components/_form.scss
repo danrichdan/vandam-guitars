@@ -1,0 +1,40 @@
+#contact-form {
+  // background: chocolate;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  button {
+    align-self: center;
+    font-family: $main-font;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+
+  & > * {
+    display: block;
+    font-family: $main-font;
+  }
+
+  label {
+    color: $secondary-color;
+    margin-bottom: 0.3rem;
+  }
+
+  input,
+  textarea {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
