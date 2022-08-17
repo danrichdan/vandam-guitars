@@ -2,7 +2,7 @@
 #hero {
   position: relative;
   height: calc(100vh - 75.8px);
-  background: url("../img/lespaul-neck-view.jpg") no-repeat center center /
+  background: url("../img/guitar-sgt2-whole-rearview.jpg") no-repeat center center /
     cover;
 
   .container {
@@ -128,11 +128,11 @@
   }
 
   .available-guitars {
-    background: url("../img/telecaster.jpg") no-repeat center center / cover;
+    background: url("../img/guitar-sgt1-body.jpg") no-repeat center center / cover;
   }
 
   .available-materials {
-    background: url("../img/turquoise-guitar.jpg") no-repeat center center /
+    background: url("../img/guitar-sgt2-body.jpg") no-repeat center center /
       cover;
   }
 
@@ -161,7 +161,7 @@
 #past-guitars {
   position: relative;
   height: 50vh;
-  background: url("../img/player.jpg") no-repeat center center / cover;
+  background: url("../img/guitar-sgt1-whole.jpg") no-repeat center center / cover;
 
   @include respond(ipad) {
     height: auto;
