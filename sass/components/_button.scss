@@ -8,7 +8,7 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: color 0.5s ease-in, background 0.5s ease-in, border 0.5s ease-in;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in, border 0.5s ease-in;
 
   @include respond(small-laptop) {
     font-size: 1.4rem;
@@ -27,7 +27,9 @@
   }
 }
 
-.btn-secondary {
+.btn-secondary, 
+.btn-secondary:link, 
+.btn-secondary:visited {
   background: $secondary-color;
   color: $primary-color;
   border: 1px solid $secondary-color;
@@ -39,13 +41,17 @@
   border: 2px solid $secondary-color;
 }
 
-.btn-tertiary {
+.btn-tertiary,
+.btn-tertiary:link,
+.btn-tertiary:visited {
   background: $tertiary-color;
   color: $primary-color;
   border: 1px solid $tertiary-color;
 }
 
-.btn-tertiary-transparent {
+.btn-tertiary-transparent,
+.btn-tertiary-transparent:link,
+.btn-tertiary-transparent:visited {
   background: transparent;
   color: $tertiary-color;
   border: 1px solid $tertiary-color;
