@@ -63,6 +63,12 @@
     } //1200px
   }
 
+  @if $breakpoint == smaller-laptop {
+    @media only screen and (max-width: 86.25em) {
+      @content;
+    } //1200px
+  }
+
   @if $breakpoint == small-laptop {
     @media only screen and (max-width: 95em) {
       @content;
