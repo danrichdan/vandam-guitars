@@ -336,6 +336,19 @@ nav a:hover {
     font-weight: bold;
     font-size: 1.2rem; }
 
+.out-of-stock {
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  background-color: #2f2c2c;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  z-index: 10;
+  border-radius: 5px; }
+
+.hide-no-stock {
+  display: none; }
+
 .overlay {
   position: absolute;
   top: 0;

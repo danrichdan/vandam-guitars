@@ -41,3 +41,5 @@ function displayCurrentYear(elSelector) {
 }
 
 displayCurrentYear("year");
+
+
