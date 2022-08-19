@@ -1,0 +1,14 @@
+.out-of-stock {
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  background-color: $color-grey-dark-1;
+  color: $color-white;
+  position: absolute;
+  top: 30%;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.hide-no-stock {
+  display: none;
+}
