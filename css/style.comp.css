@@ -51,6 +51,16 @@ li {
 .text-light {
   color: #dfd0b0; }
 
+.page-heading {
+  font-size: 4.8rem;
+  color: #58372D; }
+
+.fireburst-text {
+  color: #E64F34; }
+
+.turquoiseburst-text {
+  color: #0D7BA0; }
+
 .container {
   max-width: 1300px;
   width: 75%;
@@ -70,6 +80,9 @@ li {
 
 .section {
   padding: 5rem 0; }
+  @media only screen and (max-width: 42.125em) {
+    .section {
+      padding: 2rem 0; } }
 
 .mb-5 {
   margin-bottom: 5rem; }
@@ -82,6 +95,9 @@ li {
   @media only screen and (max-width: 29.0625em) {
     .mb-5 {
       margin-bottom: 2rem; } }
+
+.mb-2-5 {
+  margin-bottom: 2.5rem; }
 
 .mb-1-5 {
   margin-bottom: 1.5rem; }
@@ -574,3 +590,116 @@ nav a:hover {
     z-index: 1;
     display: flex;
     justify-content: center; }
+
+#guitar-page-main-content {
+  background-image: url("../img/backgrounds/purty_wood.png");
+  height: 100%;
+  position: relative; }
+  #guitar-page-main-content .container {
+    position: relative;
+    z-index: 1; }
+
+.guitars-heading-text {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  width: 60%;
+  color: #583c05; }
+  @media only screen and (max-width: 95em) {
+    .guitars-heading-text {
+      width: 70%;
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 86.25em) {
+    .guitars-heading-text {
+      width: 75%; } }
+  @media only screen and (max-width: 75em) {
+    .guitars-heading-text {
+      width: 80%; } }
+  @media only screen and (max-width: 42.125em) {
+    .guitars-heading-text {
+      width: 90%; } }
+  @media only screen and (max-width: 29.0625em) {
+    .guitars-heading-text {
+      font-size: 1.1rem; } }
+  @media only screen and (max-width: 21.75em) {
+    .guitars-heading-text {
+      width: 100%; } }
+  .guitars-heading-text a:link,
+  .guitars-heading-text a:visited {
+    color: #E64F34; }
+  .guitars-heading-text a:hover {
+    color: #9f2915; }
+
+.main-model-image {
+  width: 60%; }
+  @media only screen and (max-width: 95em) {
+    .main-model-image {
+      width: 70%; } }
+  @media only screen and (max-width: 86.25em) {
+    .main-model-image {
+      width: 75%; } }
+  @media only screen and (max-width: 75em) {
+    .main-model-image {
+      width: 80%; } }
+  @media only screen and (max-width: 42.125em) {
+    .main-model-image {
+      width: 90%; } }
+  @media only screen and (max-width: 21.75em) {
+    .main-model-image {
+      width: 100%; } }
+  .main-model-image img {
+    border-radius: 5px; }
+
+.guitar-section {
+  margin-bottom: 10rem; }
+
+.specifications {
+  color: #583c05; }
+
+.specification-title {
+  font-size: 2.5rem;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 75em) {
+    .specification-title {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 42.125em) {
+    .specification-title {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 21.75em) {
+    .specification-title {
+      font-size: 1.4rem; } }
+
+.specification-list .specification {
+  font-size: 2.2rem;
+  margin-bottom: 1rem; }
+  @media only screen and (max-width: 75em) {
+    .specification-list .specification {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 42.125em) {
+    .specification-list .specification {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 21.75em) {
+    .specification-list .specification {
+      font-size: 1.2rem; } }
+  .specification-list .specification h5 {
+    display: inline;
+    text-transform: uppercase; }
+
+.gallery-images {
+  display: flex;
+  gap: 5px; }
+  @media only screen and (max-width: 75em) {
+    .gallery-images {
+      flex-wrap: wrap; } }
+  .gallery-images .gallery-image-container {
+    width: 75px;
+    height: 75px; }
+    @media only screen and (max-width: 75em) {
+      .gallery-images .gallery-image-container {
+        width: 50px;
+        height: 50px; } }
+  .gallery-images img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; }

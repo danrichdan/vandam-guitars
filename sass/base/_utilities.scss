@@ -22,6 +22,10 @@
 
 .section {
   padding: 5rem 0;
+
+  @include respond(large-phone) {
+    padding: 2rem 0;
+  }
 }
 
 .mb-5 {
@@ -38,6 +42,9 @@
   @include respond(small-med-phone) {
     margin-bottom: 2rem;
   }
+}
+.mb-2-5 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-1-5 {
