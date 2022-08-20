@@ -163,7 +163,12 @@
               <h2 class="secondary-heading text-light">Contact Us</h2>
             </div>
             <div class="card-content">
-              <form id="contact-form" action="#">
+              <form
+                id="contact-form"
+                action="/confirmation.html"
+                data-netlify="true"
+                name="contact"
+              >
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input
@@ -193,7 +198,7 @@
                     required
                   ></textarea>
                 </div>
-                <button class="btn btn-secondary">Submit</button>
+                <button type="submit" class="btn btn-secondary">Submit</button>
               </form>
             </div>
           </div>
